@@ -1,7 +1,24 @@
 aid: floracene
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/floracene.png
 name: Floracene
-description: Floracene is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Floracene is a Y Combinator (Summer 2026) health-tech startup that optimizes medical-device
+  purchasing for independent surgery centers. Its platform surfaces clinically equivalent implant options
+  based on a physician's manufacturer contracts, helping independent orthopedic and spine surgery centers
+  choose lower-cost, clinically interchangeable devices and recoup an estimated 20-30% of implant spend
+  while protecting case margins and patient care. US surgery centers spend roughly $7 billion annually on
+  implants, which represent 40-60% of procedure costs. The company is at an early, pre-product stage with
+  a placeholder marketing site and no public API, developer portal, or documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/floracene/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +28,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health Tech
+- Medical Devices
+- Digital Health
+- Procurement
+- Healthcare IT
+- Surgery
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/floracene-domain-security.yml
+- type: Website
+  url: https://www.floracene.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
